@@ -1,0 +1,8 @@
+.searchBar-container{
+    background: #DCDCDC;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    /* border-bottom: grey 1px solid; */
+    /* margin-top: 10px; */
+}
