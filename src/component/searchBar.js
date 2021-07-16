@@ -5,24 +5,29 @@ import ImageContainer from "./imageContainer";
 class SearchBar extends React.Component {
   state = { term: "" };
 
-  render() {   
+  onFromSubmit = event => {
+    event.preventDefault();
+
+    this.props.onSubmit(this.state.term);
+  }
+
+  render() {
     return (
-          <div className="searchBar-container">
-        <from className="ui form">
-            <p>{this.state.term.length < 4 ? 'Password must be in 4 characters' : ''}</p>
-          <div className="ui action input">
+      <div className="searchBar-container">
+        <form
+          onSubmit={this.onFromSubmit}
+          className="ui form"
+        >
+          <div className="ui action search-input">
             <input
               type="text"
               placeholder="Search images..."
-              onChange={e=> this.setState({ term: e.target.value }) }/>
-            <button className="ui icon button">
-              <i className="search icon"></i>
-            </button>           
+              value={this.state.term}
+              onChange={(e) => this.setState({ term: e.target.value })}
+            />
           </div>
-        </from>
+        </form>
       </div>
-
-
     );
   }
 }

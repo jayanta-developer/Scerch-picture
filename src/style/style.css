@@ -1,8 +1,19 @@
-.searchBar-container{
-    background: #DCDCDC;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    /* border-bottom: grey 1px solid; */
-    /* margin-top: 10px; */
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  border: 0;
+
+}
+.searchBar-container {
+  width: 100%;
+  background: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.search-input{
+  width: 70vh;
+  border: 1px solid lightskyblue;
+  border-radius: 4px;
 }
