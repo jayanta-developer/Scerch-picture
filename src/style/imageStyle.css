@@ -1,0 +1,8 @@
+.image_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.image_list img{
+    width:100%;    
+}
