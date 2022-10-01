@@ -1,5 +1,5 @@
 import React from "react";
-// import style from "../style/style.css";
+import style from "../style/style.css";
 // import ImageContainer from "./imageContainer";
 
 class SearchBar extends React.Component {
@@ -18,8 +18,9 @@ class SearchBar extends React.Component {
       <div className="searchBar-container">
         <div className="ui action search-input">
           <input
+          id="Search_input"
             type="text"
-            placeholder="Search images..."
+            placeholder="Search what you want to see!"
             value={this.state.term}
             onChange={(e) => {
               this.setState({ term: e.target.value });

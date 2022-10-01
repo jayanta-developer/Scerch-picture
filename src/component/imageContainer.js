@@ -9,4 +9,4 @@ export const ImageContainer = (props) => {
   return <div className="image_list">{images}</div>;
 };
 
-// export default ImageContainer;
+export default ImageContainer;
